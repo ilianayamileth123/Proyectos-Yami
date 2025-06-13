@@ -84,12 +84,13 @@
     }
 
     ul.menu {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
     ul.menu li {
       margin: 0;
@@ -151,7 +152,9 @@
 </head>
 <body>
   <header>Proyectos Yami</header>
-  <nav aria-label="Menú principal">
+  <nav[aria-label="Menú principal"] {
+  margin: 0 auto; /* Centra el nav horizontalmente */
+}>   
     <ul class="menu">
       <li><a href="estructurabctexto22.html">Estructura Básica</a></li>
       <li><a href="listas_y_lineas.html">Líneas y Listas</a></li>
