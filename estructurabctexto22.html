@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Mi primera página web</title>
   <style>
     body {
       background-image: url("hk.png");
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      color: #222;
+    }
+
+    /* Botón estilizado como enlace */
+    .btn-regreso {
+      display: inline-block;
+      padding: 12px 24px;
+      background: linear-gradient(45deg, #f8b500, #fceabb);
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(248, 181, 0, 0.4);
+      transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+      user-select: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    .btn-regreso:hover,
+    .btn-regreso:focus {
+      background: linear-gradient(45deg, #fceabb, #f8b500);
+      color: #000;
+      outline: none;
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(248, 181, 0, 0.6);
+    }
+
+    .btn-regreso:focus-visible {
+      outline: 3px solid #f8b500;
+      outline-offset: 4px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Botón de regreso -->
-  <a href="https://ilianayamileth123.github.io/Proyectos-Yami/">
-    <button>Ir a inicio</button>
+  <!-- Botón de regreso corregido y estilizado -->
+  <a href="https://ilianayamileth123.github.io/Proyectos-Yami/" class="btn-regreso" role="button" aria-label="Ir a inicio">
+    ← Ir a inicio
   </a>
+
+  <!-- El resto de contenido sigue igual -->
 
   <!-- Encabezados -->
   <h1>Encabezados</h1>
@@ -27,59 +66,71 @@
 
   <!-- Formato básico de texto -->
   <h1>Formato básico de texto</h1>
-  <b>voca 3</b><br>
-  <i>voca 3</i><br>
-  <u>voca 3</u><br>
-  <strike>voca 3</strike><br>
-  <big>voca 3</big><br>
-  <small>voca 3</small><br>
-  H<sub>2</sub>O<br>
-  X<sup>3</sup><br>
+  <b>voca 3</b><br />
+  <i>voca 3</i><br />
+  <u>voca 3</u><br />
+  <strike>voca 3</strike><br />
+  <big>voca 3</big><br />
+  <small>voca 3</small><br />
+  H<sub>2</sub>O<br />
+  X<sup>3</sup><br />
 
   <!-- Formato de fuente -->
   <h1>Formato de fuente</h1>
-  <font face="mistral">IPN</font><br>
+  <span style="font-family: 'Mistral', cursive;">IPN</span><br />
 
-  <font size="1">IPN</font>
-  <font size="2">IPN</font>
-  <font size="3">IPN</font>
-  <font size="4">IPN</font>
-  <font size="5">IPN</font>
-  <font size="6">IPN</font>
-  <font size="7">IPN</font><br>
+  <span style="font-size: 0.75rem;">IPN</span>
+  <span style="font-size: 1rem;">IPN</span>
+  <span style="font-size: 1.25rem;">IPN</span>
+  <span style="font-size: 1.5rem;">IPN</span>
+  <span style="font-size: 1.75rem;">IPN</span>
+  <span style="font-size: 2rem;">IPN</span>
+  <span style="font-size: 2.25rem;">IPN</span><br />
 
-  <font color="maroon">IPN</font><br>
+  <span style="color: maroon;">IPN</span><br />
 
   <h3>Todos juntos</h3>
-  <font color="lime" face="magneto" size="4">CECyT No. 3 "ERR"</font><br>
+  <span style="color: lime; font-family: 'Magneto', cursive; font-size: 1.25rem;">
+    CECyT No. 3 "ERR"
+  </span><br />
 
   <!-- Sangrías -->
   <h1>Sangría</h1>
   <blockquote>
-    Voca 3<br>Voca 3<br>Voca 3
+    Voca 3<br />Voca 3<br />Voca 3
     <blockquote>
-      Voca 3<br>Voca 3<br>Voca 3
+      Voca 3<br />Voca 3<br />Voca 3
       <blockquote>
-        Voca 3<br>Voca 3<br>Voca 3
+        Voca 3<br />Voca 3<br />Voca 3
       </blockquote>
     </blockquote>
   </blockquote>
 
   <center>
-    <b><i>
-      <font color="lime" face="magneto" size="4">CECyT No. 3 "ERR"</font>
-    </i></b>
+    <b><i><span style="color: lime; font-family: 'Magneto', cursive; font-size: 1.25rem;">CECyT No. 3 "ERR"</span></i></b>
   </center>
 
   <!-- Párrafos -->
   <h1>Párrafos</h1>
-  <p>El Ing. Estanislao Ramírez Ruiz nace el 7 de mayo de 1887 en el pueblo de Tláhuac, D.F. [...]</p>
+  <p>
+    El Ing. Estanislao Ramírez Ruiz nace el 7 de mayo de 1887 en el pueblo de
+    Tláhuac, D.F. [...]
+  </p>
 
-  <p align="right">El Ing. Estanislao Ramírez Ruiz nace el 7 de mayo de 1887 en el pueblo de Tláhuac, D.F. [...]</p>
+  <p style="text-align: right;">
+    El Ing. Estanislao Ramírez Ruiz nace el 7 de mayo de 1887 en el pueblo de
+    Tláhuac, D.F. [...]
+  </p>
 
-  <p align="center">El Ing. Estanislao Ramírez Ruiz nace el 7 de mayo de 1887 en el pueblo de Tláhuac, D.F. [...]</p>
+  <p style="text-align: center;">
+    El Ing. Estanislao Ramírez Ruiz nace el 7 de mayo de 1887 en el pueblo de
+    Tláhuac, D.F. [...]
+  </p>
 
-  <p align="justify">El Ing. Estanislao Ramírez Ruiz nace el 7 de mayo de 1887 en el pueblo de Tláhuac, D.F. [...]</p>
+  <p style="text-align: justify;">
+    El Ing. Estanislao Ramírez Ruiz nace el 7 de mayo de 1887 en el pueblo de
+    Tláhuac, D.F. [...]
+  </p>
 
   <!-- Marquesinas -->
   <h1>Marquesinas</h1>
@@ -102,17 +153,16 @@
     Se pasannnn
   </marquee>
 
-  <br>
+  <br />
 
   <b><i>
-    <font color="white" face="algerian" size="4">
+    <span style="color: white; font-family: 'Algerian', cursive; font-size: 1.25rem;">
       <marquee behavior="alternate" bgcolor="gray" direction="right">
         <marquee behavior="alternate" bgcolor="gray" direction="up">de veras</marquee>
       </marquee>
-    </font>
+    </span>
   </i></b>
 
-  <br><br><br>
-
+  <br /><br /><br />
 </body>
 </html>
