@@ -1,7 +1,5 @@
 # Proyectos-Yami
-HTML
 
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -79,14 +77,12 @@ HTML
 
   <nav>
     <ul class="menu">
-      <li><a href="inicio.html">Inicio</a></li>
-      <li><a href="galeria.html">Galería</a></li>
-      <li><a href="proyectos.html">Proyectos</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="inicio.html">Inicio</a></li>
-      <li><a href="galeria.html">Galería</a></li>
-      <li><a href="proyectos.html">Proyectos</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="">Estructura Basica</a></li>
+      <li><a href="galeria.html">Lineas y Listas</a></li>
+      <li><a href="proyectos.html">Imagenes y Multimedia</a></li>
+      <li><a href="contacto.html">Hipervinculos</a></li>
+      <li><a href="inicio.html">Tablas</a></li>
+      <li><a href="galeria.html">Continentes</a></li>
     </ul>
   </nav>
 
