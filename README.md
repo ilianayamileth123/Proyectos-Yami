@@ -77,11 +77,11 @@
 
   <nav>
     <ul class="menu">
-      <li><a href="https://github.com/ilianayamileth123/Proyectos-Yami/blob/main/estructurabctexto22.html">Estructura Basica</a></li>
-      <li><a href="https://github.com/ilianayamileth123/Proyectos-Yami/blob/main/listas_y_lineas.html">Lineas y Listas</a></li>
-      <li><a href="https://github.com/ilianayamileth123/Proyectos-Yami/blob/main/imagenes.html">Imagenes y Multimedia</a></li>
-      <li><a href="https://github.com/ilianayamileth123/Proyectos-Yami/blob/main/hipervinculos.html">Hipervinculos</a></li>
-      <li><a href="https://github.com/ilianayamileth123/Proyectos-Yami/blob/main/tablas.html">Tablas</a></li>
+      <li><a href="estructurabctexto22.html">Estructura Basica</a></li>
+      <li><a href="listas_y_lineas.html">Lineas y Listas</a></li>
+      <li><a href="imagenes.html">Imagenes y Multimedia</a></li>
+      <li><a href="hipervinculos.html">Hipervinculos</a></li>
+      <li><a href="tablas.html">Tablas</a></li>
       <li><a href="continentes.html">Continentes</a></li>
     </ul>
   </nav>
