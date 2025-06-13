@@ -1,120 +1,169 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<title><center>Listas y Lineas</center></title>
+  <meta charset="UTF-8">
+  <title>Listas y líneas</title>
+
+  <!--–– Estilos básicos ––-->
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      margin: 0 1rem;
+    }
+
+    /* Líneas horizontales */
+    hr.thin          { border: 1px solid #000; }
+    hr.green         { border: 5px solid green; margin: 1rem 0; }
+    hr.left-half     { border: 1px solid #000; width: 50%; margin: 1rem 0 1rem 0; }
+    hr.pink-wide     { border: 10px solid pink; width: 30%; margin: 1rem 0 1rem auto; }
+
+    /* Listas */
+    ul.square  { list-style-type: square; }
+    ul.circle  { list-style-type: circle; }
+  </style>
 </head>
+
 <body>
- <a href="https://ilianayamileth123.github.io/Proyectos-Yami/"><button>Ir a inicio</button></a>
-<h1>Listas y lineas</h1>
-<hr>
-<hr sinze="5"color="green">
-<hr width="50% align="left">
-<hr size="10" color="pink" windth="30%"
-algn="reight">
 
-<h1><center>Listas</center><h1>
+  <a href="https://ilianayamileth123.github.io/Proyectos-Yami/">
+    <button>Ir a inicio</button>
+  </a>
 
-<hr>Listas ordenadas</hr2>
+  <h1>Listas y líneas</h1>
 
-<o1>
-<li›Mañana</li>
-<li>Tarde</li>
-<li>Noche</li>
-</o1>
+  <!-- Ejemplos de líneas horizontales con estilos distintos -->
+  <hr class="thin">
+  <hr class="green">
+  <hr class="left-half">
+  <hr class="pink-wide">
 
-<ol><h3>Primer trimestre del año</h3>
-<li>Enero</li>
-<li>Febrero</li>
-<li>Marzo</li>
-</o1>
+  <!-- Listas -->
+  <h1>Listas</h1>
 
-<ol><h3>Segundo trimestre del año</h3>
-<li value="7">Julio</li>
-<li>Agosto</1i>
-<li>Septimebre</li>
-</o1>
+  <!-- Listas ordenadas -->
+  <h2>Listas ordenadas</h2>
 
-<ol><h3>Cuarto trimestre del año</h3>
-<li value="10">Octubre</li>
-<li›Noviembre</li>
-<li›Diciembr</li>
-</o1>
+  <ol>
+    <li>Mañana</li>
+    <li>Tarde</li>
+    <li>Noche</li>
+  </ol>
 
-<ol type="A"><h3>Vocacionales</h3>
-<li>Voca 1 "GV"</li>
-<li>Voca 2 "MBP"</li>
-<li>Voca 3 "ERR"</li>
-</o1>
-<h2>Listas No ordenadas</h2>
+  <h3>Primer trimestre del año</h3>
+  <ol>
+    <li>Enero</li>
+    <li>Febrero</li>
+    <li>Marzo</li>
+  </ol>
 
-<ul>
-<li>Wendoline</li>
-<li>Marco Antonio</li>
-<li>Mizrahí</li>
-<li>Orlando</li>
-</ul>
+  <h3>Segundo trimestre del año</h3>
+  <ol start="4">
+    <li>Abril</li>
+    <li>Mayo</li>
+    <li>Junio</li>
+  </ol>
 
-<ul type="square"><h3>Colores</h3>
-<font color="purple"><li>Morado</li></font>
-<font color="blue"><li>Azul</li></font>
-<font color="yellow"><li>Amarillo</1i></font>
-</ul>
+  <h3>Tercer trimestre del año</h3>
+  <ol start="7">
+    <li>Julio</li>
+    <li>Agosto</li>
+    <li>Septiembre</li>
+  </ol>
 
-<h2>Lista de definición</h2>
+  <h3>Cuarto trimestre del año</h3>
+  <ol start="10">
+    <li>Octubre</li>
+    <li>Noviembre</li>
+    <li>Diciembre</li>
+  </ol>
 
-<dl><h3>Términos de Internet</h3>
+  <h3>Vocacionales</h3>
+  <ol type="A">
+    <li>Voca 1 “GV”</li>
+    <li>Voca 2 “MBP”</li>
+    <li>Voca 3 “ERR”</li>
+  </ol>
 
-<dt><b>Internet</dt></b>
-<dd>Red mundial de computadoras</dd>
+  <!-- Listas no ordenadas -->
+  <h2>Listas no ordenadas</h2>
 
-<dt><b>WiFi</dt></b>
-<dd>Tecnología con la que se conectan diversos dispositivos electrónicos de forma
-inalámbrica</dd>
+  <ul>
+    <li>Wendoline</li>
+    <li>Marco Antonio</li>
+    <li>Mizrahí</li>
+    <li>Orlando</li>
+  </ul>
 
-</dl>
-<h2>Listas anidadas</h2>
-<ol>
-<li>Primer semestre
-<ul>
-<li>Computación básica I</li>
-<li>Sistema operativo gráfico</li>
-</ul>
-</li><li>Segundo semestre
-<ul>
-<li>Computación básica II</li>
-<li>Hoja electrónica de cálculo</li>
-<li>Procesador de textos</li>
-<li>Presentaciones electrónicas
-<ul>
-<li>PowerPoint</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Tercer semestre
-<ol type="I">
-<li>Inglés I</li>
-<li>Álgebra</li>
-</ol>
-</li>
-<li>Cuarto semestre
-<ol type="I" start="2">
-<li>Inglés II</li>
-<li>Trigonometría</li>
-</ol>
-</li>
-<li>Quinto semestre
-<ol type="I" start="3">
-<li>Inglés III</li>
-<li>Física I</li>
-</ol>
-</li>
-<li>B. Creación de páginas Web
-<ul>
- <li>HTML</li>
-</ul>
-</li>
-</ol>
+  <h3>Colores</h3>
+  <ul class="square">
+    <li style="color:purple;">Morado</li>
+    <li style="color:blue;">Azul</li>
+    <li style="color:gold;">Amarillo</li>
+  </ul>
+
+  <!-- Lista de definición -->
+  <h2>Lista de definición</h2>
+
+  <h3>Términos de Internet</h3>
+  <dl>
+    <dt><b>Internet</b></dt>
+    <dd>Red mundial de computadoras.</dd>
+
+    <dt><b>Wi‑Fi</b></dt>
+    <dd>Tecnología que conecta dispositivos electrónicos de forma inalámbrica.</dd>
+  </dl>
+
+  <!-- Listas anidadas -->
+  <h2>Listas anidadas</h2>
+
+  <ol>
+    <li>Primer semestre
+      <ul>
+        <li>Computación básica I</li>
+        <li>Sistema operativo gráfico</li>
+      </ul>
+    </li>
+
+    <li>Segundo semestre
+      <ul>
+        <li>Computación básica II</li>
+        <li>Hoja electrónica de cálculo</li>
+        <li>Procesador de textos</li>
+        <li>Presentaciones electrónicas
+          <ul>
+            <li>PowerPoint</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li>Tercer semestre
+      <ol type="I">
+        <li>Inglés I</li>
+        <li>Álgebra</li>
+      </ol>
+    </li>
+
+    <li>Cuarto semestre
+      <ol type="I" start="2">
+        <li>Inglés II</li>
+        <li>Trigonometría</li>
+      </ol>
+    </li>
+
+    <li>Quinto semestre
+      <ol type="I" start="3">
+        <li>Inglés III</li>
+        <li>Física I</li>
+      </ol>
+    </li>
+
+    <li>B. Creación de páginas web
+      <ul>
+        <li>HTML</li>
+      </ul>
+    </li>
+  </ol>
 
 </body>
-
 </html>
