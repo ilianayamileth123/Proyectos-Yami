@@ -1,41 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Listas y líneas</title>
 
-  <!--–– Estilos básicos ––-->
   <style>
-    body{
+    body {
       font-family: Arial, sans-serif;
       margin: 0 1rem;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+
+    /* Botón mejorado */
+    .btn {
+      display: inline-block;
+      padding: 0.6em 1.2em;
+      margin: 1rem 0;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, #4caf50, #2e7d32);
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+    .btn:hover,
+    .btn:focus {
+      background: linear-gradient(135deg, #66bb6a, #388e3c);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      outline: none;
     }
 
     /* Líneas horizontales */
-    hr.thin          { border: 1px solid #000; }
-    hr.green         { border: 5px solid green; margin: 1rem 0; }
-    hr.left-half     { border: 1px solid #000; width: 50%; margin: 1rem 0 1rem 0; }
-    hr.pink-wide     { border: 10px solid pink; width: 30%; margin: 1rem 0 1rem auto; }
+    hr.thin {
+      border: 1px solid #000;
+      margin: 1rem 0;
+    }
+    hr.green {
+      border: 5px solid green;
+      margin: 1rem 0;
+    }
+    hr.left-half {
+      border: 1px solid #000;
+      width: 50%;
+      margin: 1rem 0 1rem 0;
+    }
+    hr.pink-wide {
+      border: 10px solid pink;
+      width: 30%;
+      margin: 1rem 0 1rem auto;
+    }
 
     /* Listas */
-    ul.square  { list-style-type: square; }
-    ul.circle  { list-style-type: circle; }
+    ul.square {
+      list-style-type: square;
+    }
+    ul.circle {
+      list-style-type: circle;
+    }
   </style>
 </head>
-
 <body>
 
-  <a href="https://ilianayamileth123.github.io/Proyectos-Yami/">
-    <button>Ir a inicio</button>
-  </a>
+  <!-- Botón de regreso con enlace accesible -->
+  <a href="https://ilianayamileth123.github.io/Proyectos-Yami/" class="btn" role="button" aria-label="Ir a inicio">Ir a inicio</a>
 
   <h1>Listas y líneas</h1>
 
   <!-- Ejemplos de líneas horizontales con estilos distintos -->
-  <hr class="thin">
-  <hr class="green">
-  <hr class="left-half">
-  <hr class="pink-wide">
+  <hr class="thin" />
+  <hr class="green" />
+  <hr class="left-half" />
+  <hr class="pink-wide" />
 
   <!-- Listas -->
   <h1>Listas</h1>
