@@ -82,7 +82,7 @@
       <li><a href="https://github.com/ilianayamileth123/Proyectos-Yami/blob/main/imagenes.html">Imagenes y Multimedia</a></li>
       <li><a href="https://github.com/ilianayamileth123/Proyectos-Yami/blob/main/hipervinculos.html">Hipervinculos</a></li>
       <li><a href="https://github.com/ilianayamileth123/Proyectos-Yami/blob/main/tablas.html">Tablas</a></li>
-      <li><a href="https://github.com/ilianayamileth123/Proyectos-Yami/blob/main/continentes.html">Continentes</a></li>
+      <li><a href="continentes.html">Continentes</a></li>
     </ul>
   </nav>
 
