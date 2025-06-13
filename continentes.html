@@ -27,13 +27,36 @@
       width: 100%;
       height: auto;
     }
+
+    /* Estilo mejorado para el "botón" link */
+    .btn {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 0.5rem 1.2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      background-color: #ffd700;
+      border-radius: 6px;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+      cursor: pointer;
+    }
+    .btn:hover,
+    .btn:focus {
+      background-color: #e6c200;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+      outline: none;
+    }
   </style>
 </head>
 
 <body>
 
-  <a href="https://ilianayamileth123.github.io/Proyectos-Yami/">
-    <button>Ir a inicio</button>
+  <a href="https://ilianayamileth123.github.io/Proyectos-Yami/" class="btn" role="button" aria-label="Ir a inicio">
+    Ir a inicio
   </a>
 
   <h1>Continentes</h1>
