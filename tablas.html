@@ -1,125 +1,58 @@
-<html>
-<head><title> Tablas </title></head>
-<body>
-  <a href="https://ilianayamileth123.github.io/Proyectos-Yami/"><button>Ir a inicio</button></a>
-<h1 ><marquee> Tablas</h1></marquee>
-<h3>Tabla simple</h3>
-<table>
-<tr>
-<td>Fresa</td>
-<td>Uva</td>
-<td>Plátano</td>
-</tr>
-<tr>
-<td>Frambueza</td>
-<td>Manzana</td>
-<td>Mango</td>
-</tr>
-<tr>
-<td>Cereza</td>
-<td>Kiwi</td>
-<td>Guayaba</td>
-</tr>
-</table>
-<h3>Tabla con borde</h3>
-<table border="1" bordercolor="red">
-<tr>
-<td>Fresa</td> 
-<td>Uva</td>
-<td>Plátano</td>
-</tr> 
-<tr>
-<td>Frambueza</td> 
-<td>Manzana</td> 
-<td>Mango</td>
-</tr> 
-<tr>
-<td>Cereza</td> 
-<td>Kiwi</td>
-<td>Guayaba</td>
-</tr>
-</table>
-<h3>Tabla con encabezados</h3>
-<table border="1" bordercolor="red">
-<tr>
-<th>Frutas Rojas</th>
-<th>Frutas Verdes</th>
-<th>Frutas Amarillas</th>
-</tr>
-<tr>
-<td>Fresa</td>
-<td>Uva</td>
-<td>Plátano</td>
-</tr>
-<tr>
-<td>Frambueza</td>
-<td>Manzana</td>
-<td>Mango</td>
-</tr>
-</table>
-<h3>Tabla con título en columnas</h3> 
-<table border="1" bordercolor="red">
-<tr>
-<td colspan=3><center><h3>Frutas</center></h3></td>
-</tr>
-<tr>
-<th>Frutas Rojas</th>
-<th>Frutas Verdes</th> 
-<th>Frutas Amarillas</th>
-</tr>
-<tr>
-<td>Fresa</td>
-<td>Uva</td>
-<td>Plátano</td>
-</tr>
-<tr>
-<td>Frambueza</td>
-<td>Manzana</td>
-<td>Mango</td>
-</tr>
-<tr>
-<td>Cereza</td>
-<td>Kiwi</td>
-<td>Guayaba</td>
-</tr>
-</table>
-<h3>Tabla con título en filas</h3>
-<table border="1" bordercolor="red">
-<tr>
-<td rowspan=4><center><h3>Frutas</center></h3></td>
-<th>Frutas Rojas</th>
-<th>Frutas Verdes</th>
-<th>Frutas Amarillas</th>
-</tr>
-<tr>
-<td>Fresa</td>
-<td>Uva</td>
-<td>Plátano</td>
-</tr>
-<tr>
-<td>Frambueza</td>
-<td>Manzana</td>
-<td>Mango</td>
-</tr>
-<tr>
-<td>Cereza‹/td>
-<td>Kiwi</td>
-<td>Guayaba</td>
-</tr>
-</table>
-<h2>Atributos</h2>
-align <br>
-valign <br>
-background <br>
-bgcolor<br>
-bordercolor<br>
-cellpadding <br>
-cellspacing<br>
-border <br>
-height <br>
-width <br>
-<br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</table>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tablas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #d63384;
+      animation: deslizar 5s linear infinite;
+    }
+
+    @keyframes deslizar {
+      0% { transform: translateX(-100%); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateX(100%); opacity: 0; }
+    }
+
+    h3, h2 {
+      color: #495057;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 1.5rem auto;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    table, th, td {
+      border: 1px solid #dc3545;
+    }
+
+    th {
+      background-color: #f8d7da;
+      color: #721c24;
+      padding: 0.8rem;
+    }
+
+    td {
+      text-align: center;
+      padding: 0.6rem;
+    }
+
+    a button {
+      display: block;
+      margin: 0 auto 2rem;
+      padding: 10px 20px;
+      background-color: #198754;
+      color: white;
+      border: n
