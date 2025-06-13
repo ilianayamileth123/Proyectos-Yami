@@ -1,70 +1,138 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<title>Hipervinculos</title>
-<body link="gray" vlink="Maroon" alink="olive">
-  <a href="https://ilianayamileth123.github.io/Proyectos-Yami/"><button>Ir a inicio</button></a>
-<h1><center>Hipervínculos</h1></center>
-<h2>Hipervínculos externos</h2>
-<h3>A una página de Internet</h3>
-<a href="http://www.google.com" >Google</a>
-<a href="http://www.marvel.com">Página donde encontrare a mi Capi</a>
-<a href="http://www.eluniversal.com.mx" target="_self">El periódico de México</a>
-<h3>A una página de Internet en otra pestaña</h3>
-<a href="http://www.milenio.com.mx" target="_blank">Noticias </a>
-<h3>A una página de Internet en una imagen</h3>
-<a href="http://www.sanrio.com"><img src="hk.png"></a>
-<h3>A un archivo</h3>
-<a href="hellokitty.jpg">Imagen de Kitty</a><br>
-<a href="historiaHK.docx">Historia de HK</a>
-<h2>Hipervínculos a correo</h2>
-<a href="mailto:wendoline.compu@gmail.com">Mi correo</a><br>
-<a href="mailto:wendoline.compu@gmail.com"><img src="correo.gif"></a>
-<h2>Hipervínculos internos</h2>
-<a name="menu"><h2>Menú</h2>
-<a href=#mision>Misión </a><br>
-<a href=#vision>Visión </a><br>
-<a href=#escudo>Escudo </a><br>
-<a href=#lema>Lema </a><br>
-<a href=#himno>Himno </a><br>
-<a href=#mascota>Mascota </a><br>
-<a href=#porra>Porra </a><br>
-</a>
-<center><h1>Instituto Politécnico Nacional<h1></center>
-<a name="mision">
-<h4>Misión Institucional</h4>
-El Instituto Politécnico Nacional contribuye al desarrollo económico y social de la nación, a través 
-de la formación integral de personas competentes; de la investigación, el desarrollo tecnológico y 
-la innovación. Además tiene reconocimiento internacional por su calidad e impacto social.</a>
-<a href=#menu><img src="menu.png" width=50 heigth=50 align="right"></a>
-<a name="vision"><h4>Visión</h4>
-Institución educativa incluyente de prestigio internacional, que con su comunidad contribuye al 
-desarrollo científico, tecnológico e innovación con impacto social en el país.</a>
-<a name="escudo"><h4>Escudo</h4>
-Fueron las inquietudes estudiantiles quienes tomaron la iniciativa para crear los símbolos que 
+  <meta charset="UTF-8">
+  <title>Hipervínculos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    h1, h2, h3, h4 {
+      color: #800000;
+    }
+    a {
+      display: block;
+      margin: 5px 0;
+      color: gray;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .btn-inicio {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #800000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .btn-inicio:hover {
+      background-color: #a00000;
+    }
+    img.icon {
+      width: 50px;
+      height: 50px;
+      float: right;
+    }
+    img.centered {
+      display: block;
+      margin: 10px auto;
+      max-width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="https://ilianayamileth123.github.io/Proyectos-Yami/" class="btn-inicio">Ir a inicio</a>
+
+  <h1 style="text-align:center;">Hipervínculos</h1>
+
+  <h2>Hipervínculos externos</h2>
+
+  <h3>A una página de Internet</h3>
+  <a href="https://www.google.com" target="_blank">Google</a>
+  <a href="https://www.marvel.com" target="_blank">Página donde encontraré a mi Capi</a>
+  <a href="https://www.eluniversal.com.mx" target="_self">El periódico de México</a>
+
+  <h3>A una página de Internet en otra pestaña</h3>
+  <a href="https://www.milenio.com" target="_blank">Noticias</a>
+
+  <h3>A una página de Internet en una imagen</h3>
+  <a href="https://www.sanrio.com" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Hello_Kitty_character_portrait.png" alt="Hello Kitty" width="100">
+  </a>
+
+  <h3>A un archivo</h3>
+  <a href="https://via.placeholder.com/200x200.png?text=Kitty">Imagen de Kitty</a>
+  <a href="https://example.com/historiaHK.docx" download>Historia de HK (docx)</a>
+
+  <h2>Hipervínculos a correo</h2>
+  <a href="mailto:wendoline.compu@gmail.com">Mi correo</a>
+  <a href="mailto:wendoline.compu@gmail.com">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Correo" width="50">
+  </a>
+
+  <h2><a name="menu">Menú</a></h2>
+  <a href="#mision">Misión</a>
+  <a href="#vision">Visión</a>
+  <a href="#escudo">Escudo</a>
+  <a href="#lema">Lema</a>
+  <a href="#himno">Himno</a>
+  <a href="#mascota">Mascota</a>
+  <a href="#porra">Porra</a>
+
+  <h1 style="text-align:center;">Instituto Politécnico Nacional</h1>
+
+  <a name="mision"></a>
+  <h4>Misión Institucional</h4>
+  <p>El Instituto Politécnico Nacional contribuye al desarrollo económico y social de la nación, a través de la formación integral de personas competentes; de la investigación, el desarrollo tecnológico y la innovación. Además tiene reconocimiento internacional por su calidad e impacto social.</p>
+  <a href="#menu"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Menú" class="icon"></a>
+
+  <a name="vision"></a>
+  <h4>Visión</h4>
+  <p>Institución educativa incluyente de prestigio internacional, que con su comunidad contribuye al desarrollo científico, tecnológico e innovación con impacto social en el país.</p>
+  <a href="#menu"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Menú" class="icon"></a>
+
+  <a name="escudo"></a>
+  <h4>Escudo</h4>
+  <p>Fueron las inquietudes estudiantiles quienes tomaron la iniciativa para crear los símbolos que 
 identificaran a la naciente institución politécnica. En los años 1944-1945 la Federación Nacional de 
 Estudiantes Técnicos (FNET) lanzó una convocatoria para diseñar un escudo representativo de las 
 escuelas que integraban el IPN. El primer lugar fue otorgado al alumno Armando López Fonseca 
 quien con ayuda de su compañero Jorge Grajales, lograron que su diseño fuera el ganador. El 
-escudo fue modificado en 1948 conservando sus elementos originales.<br>
-<img src="escudo.jpg"></a>
-<a href=#menu><img src="menu.png" width=50 heigth=50 align="right"></a>
-<a name="lema"><h4>Lema: "La Técnica al Servicio de la Patria"</h4>
-El lema era utilizado por algunos estudiantes desde antes de la creación del IPN, pero fue durante 
+escudo fue modificado en 1948 conservando sus elementos originales.</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Escudo_del_IPN.svg" alt="Escudo del IPN" class="centered">
+  <a href="#menu"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Menú" class="icon"></a>
+
+  <a name="lema"></a>
+  <h4>Lema: "La Técnica al Servicio de la Patria"</h4>
+  <p>El lema era utilizado por algunos estudiantes desde antes de la creación del IPN, pero fue durante 
 el Primer Congreso Nacional de Estudiantes Técnicos, realizado en la ciudad de Chihuahua en 
 1937, donde el estudiante Jesús Robles propuso utilizar la frase La Técnica al Servicio de una Patria 
 Mejor. Años más tarde este lema fue modificado por “La Técnica al Servicio de la Patria”, el cual 
-expresa los ideales del Politécnico.</a>
-<a href=#menu><img src="menu.png" width=50 heigth=50 align="right"></a>
-<a name="himno"><h4>Himno</h4>
-Para obtener el Himno se convocó a un concurso abierto para su creación, pero no hubo eco al 
+expresa los ideales del Politécnico.</p>
+  <a href="#menu"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Menú" class="icon"></a>
+
+  <a name="himno"></a>
+  <h4>Himno</h4>
+  <p>Para obtener el Himno se convocó a un concurso abierto para su creación, pero no hubo eco al 
 llamado. Luego de dos nuevas convocatorias, la poetisa Carmen de la Fuente resultó triunfadora 
 del certamen y la Dirección General del Instituto le premió, el 15 de julio de 1961. Posteriormente, 
 como la música aún no estaba elegida, se convocó a un certamen para poner música a la letra del 
 himno del IPN, y resultó triunfador Armando González Domínguez, pianista reconocido y director 
-de varias orquestas.</a>
-<a href=#menu><img src="menu.png" width=50 heigth=50 align="right"></a>
-<a name="mascota"><h4>Mascota</h4>
-Es tradición que las Instituciones de Educación Superior, y particularmente los equipos deportivos, 
+de varias orquestas.</p>
+  <a href="#menu"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Menú" class="icon"></a>
+
+  <a name="mascota"></a>
+  <h4>Mascota</h4>
+  <p>Es tradición que las Instituciones de Educación Superior, y particularmente los equipos deportivos, 
 elijan una mascota; la del Instituto Politécnico Nacional es un burro blanco. Se conocen por 
 tradición oral diferentes versiones que al paso del tiempo se funden entre la realidad y el mito, el 
 caso del Instituto Politécnico Nacional es de las más conocidas, la razón es muy particular. Se dice 
@@ -72,11 +140,13 @@ que al establecer los límites del terreno donde se construía el Instituto, en 
 Tomás durante los años 30, quedó encerrada una burra blanca; al ser descubierta por los 
 estudiantes e integrantes del primer equipo de fútbol americano la tomaron como su mascota. 
 Con el paso de los años, la burra se convirtió en uno de los símbolos del Politécnico, 
-fundamentalmente en el ámbito deportivo.<br>
-<center><img src="mascota.jpg"></center></a>
-<a href=#menu><img src="menu.png" width=50 heigth=50 align="right"></a>
-<a name="porra"><h4>Porra</h4>
-Uno de los deportes que creció junto con el Politécnico fue el fútbol americano. Desde sus inicios 
+fundamentalmente en el ámbito deportivo.</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Burro_blanco.jpg" alt="Burro blanco IPN" class="centered">
+  <a href="#menu"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Menú" class="icon"></a>
+
+  <a name="porra"></a>
+  <h4>Porra</h4>
+  <p>Uno de los deportes que creció junto con el Politécnico fue el fútbol americano. Desde sus inicios 
 ha dejado profunda huella entre sus seguidores, quienes para apoyarlo han entonado diferentes 
 porras: desde el chiquitibum hasta el huélum; sin embargo, es éste el que ha permanecido vigente 
 a través de un grito de fiesta para celebrar y cerrar todos los eventos. El 16 de marzo de 1985 el 
@@ -89,7 +159,8 @@ reunir a los estudiantes era -¡huelga, huelga!-. Basado en esto, sugerí que se
 y era una palabra porrística usada casi en todo Estados Unidos. Por otro lado, una muchacha hizo 
 el comentario que el Poli era la 'gloria'. Otra persona insistía que la porra debía ser de mucho 
 'pegue' y como consecuencia natural, brotó la 'cachiporra'. Total, después de un par de horas de 
-pláticas y discusiones, salió la que ustedes conocen".</a>
-<a href=#menu><img src="menu.png" width=50 heigth=50 align="right"></a>
+pláticas y discusiones, salió la que ustedes conocen</p>
+  <a href="#menu"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Menú" class="icon"></a>
+
 </body>
 </html>
