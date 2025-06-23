@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Familia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      font-size: 2rem;
+      position: relative;
+    }
+
+    .home-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: white;
+      color: #007bff;
+      border: 2px solid #007bff;
+      border-radius: 10px;
+      padding: 8px 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .home-button:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    section {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 700px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0056b3;
+    }
+
+    .galeria {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .galeria img {
+      width: 100%;
+      max-width: 220px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="home-button">🏠 Home</a>
+    Mi Familia
+  </header>
+
+  <section>
+    <h2>Somos cinco en la familia:</h2>
+    <ul>
+      <li><strong>Mi papá:</strong> Ingeniero eléctrico, originario de un pueblito de Puebla. Tiene 37 años y es una gran inspiración para mí.</li>
+      <li><strong>Mi mamá:</strong> Licenciada en Comercio Internacional, nacida en la capital de Puebla. Tiene 36 años y siempre nos apoya con amor.</li>
+      <li><strong>Yo:</strong> Estudiante de preparatoria, también soy orgullosamente poblana.</li>
+      <li><strong>Bren:</strong> Tiene 9 años, estudia 3º de primaria en el Estado de México. Es muy curiosa y divertida.</li>
+      <li><strong>Emi:</strong> Tiene 7 años, cursa 2º de primaria en la misma escuela que Bren. Siempre está llena de energía y ocurrencias.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>¡Momentos en familia!</h2>
+    <div class="galeria">
+      <img src="familia1.jpg" alt="Foto familiar 1">
+      <img src="familia2.jpg" alt="Foto familiar 2">
+      <img src="familia3.jpg" alt="Foto familiar 3">
+    </div>
+  </section>
+
+  <footer>
+    Porque la familia es el primer amor que conocemos 💙
+  </footer>
+</body>
+</html>
+
