@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Hola, soy yo!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ffd6e0, #fff7b2);
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      font-size: 2rem;
+    }
+
+    section {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 700px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #d63384;
+    }
+
+    ul {
+      list-style: square inside;
+      padding-left: 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    ¡Hola, soy una chica con grandes sueños!
+  </header>
+
+  <section>
+    <h2>Sobre mí</h2>
+    <p>¡Hola! Soy originaria del hermoso estado de Puebla y actualmente tengo 15 años. Estoy cursando la preparatoria en el <strong>CECyT No. "Estanislao Ramírez Ruiz"</strong>.</p>
+    <p>Tengo tres hermanas menores: una tiene 9 años y la otra 7. Soy la prima mayor en ambas ramas de mi familia, ¡y me encanta!</p>
+  </section>
+
+  <section>
+    <h2>Mi sueño</h2>
+    <p>Desde pequeña he soñado con convertirme en <strong>ingeniera eléctrica</strong>. Por eso decidí estudiar en la vocacional. Espero llegar a ser, al menos, la mitad de lo increíble que es mi papá. ¡Él es mi mayor inspiración!</p>
+  </section>
+
+  <section>
+    <h2>Mis defectos (¡pero todos tenemos algo!)</h2>
+    <ul>
+      <li>Me enojo con facilidad (pero se me pasa rápido)</li>
+      <li>Soy muy chismosa (¡pero siempre con estilo!)</li>
+      <li>Me desespero fácilmente</li>
+      <li>Confío demasiado en los demás</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Mis superpoderes 😎</h2>
+    <ul>
+      <li>Soy muy flexible (¡puedo hacer cosas asombrosas!)</li>
+      <li>Súper sociable (¡me encanta hacer nuevos amigos!)</li>
+    </ul>
+  </section>
+
+  <footer>
+    Diseñado con 💖 por una futura ingeniera eléctrica ⚡
+  </footer>
+
+</body>
+</html>
 
