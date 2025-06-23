@@ -19,47 +19,44 @@
     }
 
     body {
-  background: linear-gradient(to right, #fceabb, #f8b500); /* Color DHL */
-  color: #333;
-}
-    
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      color: var(--color-texto);
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /********** CABECERA **********/
     header {
-  background-color: #800000; /* fondo vino oscuro para alto contraste */
-  color: white;
-  padding: 20px;
-  border-radius: var(--radio-bordes);
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 900;
-  user-select: none;
-  letter-spacing: 2px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-shadow: none; /* eliminar sombra que puede reducir legibilidad */
-  animation: scaleUp 1s ease forwards;
-}
+      background-color: #800000;
+      color: var(--color-blanco);
+      padding: 20px;
+      border-radius: var(--radio-bordes);
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 900;
+      user-select: none;
+      letter-spacing: 2px;
+      animation: scaleUp 1s ease forwards;
+      margin: 20px;
+    }
 
     @keyframes pulseColor {
       0%, 100% {
-        color: #f8b500; /* color primario */
+        color: #f8b500;
         text-shadow: 2px 2px 8px rgba(248, 181, 0, 0.6);
       }
       50% {
-        color: #fff8dc; /* color cornsilk */
+        color: #fff8dc;
         text-shadow: 2px 2px 12px rgba(255, 248, 220, 0.9);
       }
     }
 
     @keyframes scaleUp {
-      0% {
-        transform: scale(0.8);
-        opacity: 0;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
     }
 
+    /********** MENÚ HORIZONTAL PRINCIPAL **********/
     nav[aria-label="Menú principal"] {
       background-color: var(--color-blanco);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -67,7 +64,7 @@
       overflow: hidden;
       width: 100%;
       max-width: 900px;
-      margin: 0 auto; /* Centra el nav horizontalmente */
+      margin: 0 auto;
     }
 
     ul.menu {
@@ -79,9 +76,7 @@
       padding: 0;
     }
 
-    ul.menu li {
-      margin: 0;
-    }
+    ul.menu li { margin: 0; }
 
     ul.menu li a {
       display: block;
@@ -108,9 +103,7 @@
     }
 
     ul.menu li a:hover,
-    ul.menu li a:focus-visible {
-      color: var(--color-primario);
-    }
+    ul.menu li a:focus-visible { color: var(--color-primario); }
 
     ul.menu li a:hover::after,
     ul.menu li a:focus-visible::after {
@@ -118,12 +111,76 @@
       left: 50%;
     }
 
-    /* Responsive */
+    /********** SECCIONES GRID **********/
+    main.grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    section {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: var(--radio-bordes);
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(4px);
+    }
+
+    /********** MENÚ VERTICAL SECUNDARIO **********/
+    .menu-vertical {
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      border-radius: var(--radio-bordes);
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-top: 10px;
+    }
+
+    .menu-vertical ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-vertical li a {
+      display: block;
+      padding: 15px 25px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      transition: background var(--transicion), transform var(--transicion);
+    }
+
+    .menu-vertical li:last-child a { border-bottom: none; }
+
+    .menu-vertical li a:hover,
+    .menu-vertical li a:focus-visible {
+      background: rgba(0, 0, 0, 0.15);
+      transform: translateX(5px);
+    }
+
+    /********** PIE DE PÁGINA **********/
+    footer {
+      background-color: #800000;
+      color: var(--color-blanco);
+      text-align: center;
+      padding: 10px 0;
+      border-radius: var(--radio-bordes) var(--radio-bordes) 0 0;
+      margin: 20px;
+      overflow: hidden;
+    }
+
+    footer marquee {
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    /********** RESPONSIVE **********/
     @media (max-width: 600px) {
-      ul.menu {
-        flex-direction: column;
-        align-items: stretch;
-      }
+      ul.menu { flex-direction: column; }
 
       ul.menu li a {
         padding: 12px 20px;
@@ -131,15 +188,15 @@
         text-align: center;
       }
 
-      ul.menu li:last-child a {
-        border-bottom: none;
-      }
- }
+      ul.menu li:last-child a { border-bottom: none; }
+    }
   </style>
 </head>
 <body>
   <header>Proyectos Yami</header>
-  <nav aria-label="Menú principal">  
+
+  <!-- Menú horizontal principal -->
+  <nav aria-label="Menú principal">
     <ul class="menu">
       <li><a href="estructurabctexto22.html">Estructura Básica</a></li>
       <li><a href="listas_y_lineas.html">Líneas y Listas</a></li>
@@ -149,5 +206,44 @@
       <li><a href="continentes.html">Continentes</a></li>
     </ul>
   </nav>
+
+  <!-- Contenedor principal con 4 secciones -->
+  <main class="grid-4">
+    <!-- Sección 1 -->
+    <section id="intro">
+      <h2>Introducción</h2>
+      <p>Utiliza esta área para explicar el propósito de tu sitio o mostrar contenido destacado.</p>
+    </section>
+
+    <!-- Sección 2 con menú vertical -->
+    <section id="menu-vertical-section">
+      <h2>Menú Lateral</h2>
+      <nav class="menu-vertical" aria-label="Menú secundario">
+        <ul>
+          <li><a href="#">Enlace 1</a></li>
+          <li><a href="#">Enlace 2</a></li>
+          <li><a href="#">Enlace 3</a></li>
+          <li><a href="#">Enlace 4</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Sección 3 -->
+    <section id="contenido-3">
+      <h2>Sección 3</h2>
+      <p>Aquí puedes colocar más información, imágenes o cualquier otro componente interactivo.</p>
+    </section>
+
+    <!-- Sección 4 -->
+    <section id="contenido-4">
+      <h2>Sección 4</h2>
+      <p>Completa esta sección con el contenido que necesites, como formularios, mapas o noticias.</p>
+    </section>
+  </main>
+
+  <!-- Pie de página con marquesina -->
+  <footer>
+    <marquee behavior="scroll" direction="left" scrollamount="10">YP</marquee>
+  </footer>
 </body>
 </html>
